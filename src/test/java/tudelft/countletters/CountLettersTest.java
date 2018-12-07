@@ -17,4 +17,17 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void firstWordDoesNotMatch() {
+        int words = new CountLetters().count("cat|dogr");
+        Assertions.assertEquals(1, words);
+    }
+
+    @Test
+    public void wordsEndwithR() {
+        int words = new CountLetters().count("catr|dogr");
+        Assertions.assertEquals(2, words);
+    }
+
+
 }

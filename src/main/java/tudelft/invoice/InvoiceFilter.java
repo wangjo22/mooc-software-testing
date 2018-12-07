@@ -5,6 +5,11 @@ import java.util.List;
 
 public class InvoiceFilter {
 
+    /*
+        I wanna filter all the invoices where their value are
+        smaller than 100.0.
+        Invoices come from the database
+     */
     public List<Invoice> filter() {
 
         InvoiceDao invoiceDao = new InvoiceDao();
